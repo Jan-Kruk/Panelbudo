@@ -12,8 +12,6 @@ public class CommonController {
     IEmployeeDAO employeeDAO;
 @GetMapping(path = "/main")
     public String main(){
-        Employee employee = new Employee("Jan","Kruk","Kosztorysant",5450,"Biuro");
-        employeeDAO.save(employee);
     return "main";
 }
 }
