@@ -21,16 +21,13 @@ public class Employee {
     private String surName;
     @Column(name = "role")
     private String role;
-    @Column(name = "salary")
-    private int salary;
     @Column(name = "current_site")
     private String currentSite;
 
-    public Employee(String name, String surName, String role, int salary, String currentSite) {
+    public Employee(String name, String surName, String role, String currentSite) {
         this.name = name;
         this.surName = surName;
         this.role = role;
-        this.salary = salary;
         this.currentSite = currentSite;
     }
 }
